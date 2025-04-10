@@ -1,0 +1,6 @@
+This file contains some sample text. It is 
+spread over multiple lines with multiple kinds of strings;
+special characters: #@#@$$#$#; numbers: 2133, 32, 3.13, -2;
+letters: a b c d e f g h i j k l m n o p q r s t u v w x y z
+etc.
+ 

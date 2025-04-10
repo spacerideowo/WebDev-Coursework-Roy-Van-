@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1741243198 source:e:\ѧϰ\grade 12\cpp proj\array search c++ project\searcharray\main.cpp
+	<iostream>
+	"arrayList.h"
+
+1740962360 e:\ѧϰ\grade 12\cpp proj\array search c++ project\searcharray\arraylist.h
+
+1741243198 source:e:\ѧϰ\grade 12\cpp proj\array search c++ project\searcharray\arraylist.cpp
+	<iostream>
+	"arrayList.h"
+
+1741243198 source:e:\ѧϰ\grade 12\cpp proj\array search c++ project\arraylist.cpp
+	<iostream>
+	"arrayList.h"
+
+1740962360 e:\ѧϰ\grade 12\cpp proj\array search c++ project\arraylist.h
+
+1741243198 source:e:\ѧϰ\grade 12\cpp proj\array search c++ project\main.cpp
+	<iostream>
+	"arrayList.h"
+

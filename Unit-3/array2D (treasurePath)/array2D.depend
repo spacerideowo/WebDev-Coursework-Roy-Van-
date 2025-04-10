@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1639702671 source:c:\users\markv\onedrive\programming\c++codeblocks\00_firsttry\array2d\array2d.cpp
+	<iostream>
+	"array2D.h"
+
+1639704176 c:\users\markv\onedrive\programming\c++codeblocks\00_firsttry\array2d\array2d.h
+
+1639704257 source:c:\users\markv\onedrive\programming\c++codeblocks\00_firsttry\array2d\main.cpp
+	<iostream>
+	"array2D.h"
+	"testArrays.h"
+
+1639704314 c:\users\markv\onedrive\programming\c++codeblocks\00_firsttry\array2d\testarrays.h
+
+1741238715 source:c:\users\spaceride\downloads\array2d\array2d.cpp
+	<iostream>
+	"array2D.h"
+
+1639704176 c:\users\spaceride\downloads\array2d\array2d.h
+
+1639704257 source:c:\users\spaceride\downloads\array2d\main.cpp
+	<iostream>
+	"array2D.h"
+	"testArrays.h"
+
+1639704314 c:\users\spaceride\downloads\array2d\testarrays.h
+
+1741658404 source:e:\ѧϰ\grade 12\cpp proj\array2d (treasurepath)\array2d.cpp
+	<iostream>
+	"array2D.h"
+
+1741575525 e:\ѧϰ\grade 12\cpp proj\array2d (treasurepath)\array2d.h
+
+1741658882 source:e:\ѧϰ\grade 12\cpp proj\array2d (treasurepath)\main.cpp
+	<iostream>
+	"array2D.h"
+	"testArrays.h"
+
+1639704314 e:\ѧϰ\grade 12\cpp proj\array2d (treasurepath)\testarrays.h
+

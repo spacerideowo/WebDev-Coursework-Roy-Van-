@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1645107746 source:d:\onedrive\education\01 computerscience 12\lessons\22_fileio\2_fileio_errors\main.cpp
+	<iostream>
+	<fstream>
+

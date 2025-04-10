@@ -1,0 +1,5 @@
+Maximum: 928.01
+Minimum: 0.03
+Sum: 124633
+Average: 124.633
+Median: 68.005
