@@ -1,0 +1,10 @@
+<!-- Your comment goes here.-->
+
+<p> You'll love our product's amazing
+    <!-- insert product attributes here. -->
+    and style.</p>
+
+<!-- Do we want to place this text here or somewhere else? <p> Reasons you should buy our product!</p> -->
+
+<!-- Anything between the comment opening tag and the comment closing tag 
+will not be displayed on your web page, even if there are multiple lines of comment or code nested inside the comment tags.-->
