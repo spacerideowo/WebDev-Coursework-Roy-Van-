@@ -16,7 +16,7 @@
    - Inserted images into webpages  
    - Learned about important image attributes
 
-## What I Can Improve  
+## What I Can Improve? 
 - **Combine elements**: Try using lists and images together in one page  
 - **More attributes**: Explore additional attributes for each element   
 
