@@ -1,9 +1,9 @@
 # 🌐 Intro to Web Development 🤖
 
-- **Name:** [Roy Van]
+- **Name:** Roy Van
 - **Instructor:** Mr. Gullo
 - **Course Authors:** Mary Kiang, Atiyah Conry
-- **Date of Completion:** [Date Here]
+- **Date of Completion:** 2025/6/2
 
 ---
 
