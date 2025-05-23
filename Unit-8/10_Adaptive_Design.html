@@ -1,0 +1,115 @@
+summarize and explain in Chinese: Creating Adaptive Design
+Now, in contrast to responsive design, let's understand more about adaptive design.
+
+In contrast to responsive design that fluidly rearranges the same layout of elements on a web page based on the user's screen size, adaptive design uses static layouts for specific screen sizes.
+
+To create adaptive web design, it is important to first understand the concepts of the viewport and different breakpoints for the different screen sizes your web page may be viewed on.
+
+What is the viewport and why is it important in web design?
+The viewport is the area on a web page that is visible to the user. In the past (pre-mobile phone days) people viewed websites on desktop size computer monitors. As most of these monitor screens were relatively the same dimensions, a web designer could code their layout to these dimensions.
+
+With the invention of and widespread use of smartphones and tablets, designers had to decide how their web pages would appear on all different types and sizes of screens. Just scaling down or 'shrinking' the entire web page layout was not considered an ideal solution. Web designers wanted the ability to have their web page layouts adapt to particular viewports. They wanted to use different layouts for the 'same' web page. Which layout a user sees is designed for the device and viewport the user is using.
+
+How do you use the viewport?
+Use the <meta> tag to control the viewport and in doing so, the dimensions and scaling of the web page.
+
+Include the following code in all your web pages:
+
+html
+
+  Copy
+<meta /> name="viewport" content="width-device-width, initial-scale=1.0">
+The value for content width-device-width tells the browser to set the width of your web page to the screen width your web page is being displayed on. The initial-scale=1.0 part of the code above tells the browser to set the initial zoom level of your web page to 1.0 when the browser first loads your web page.
+
+Breakpoint
+A breakpoint is the point at which a layout adapts (changes) based on the width of the screen on the user's device. Breakpoints are sometimes referred to as media query breakpoints as media query is used when setting these breakpoints.
+
+You may want different layouts for different size screens.
+
+Let's review an example of a layout with fixed-sized elements and use media queries to adapt (change) the design at certain screen breakpoints. This code uses media queries to change the design of a web page based on different screen sizes. The layout is a simple web page with a header, a content area, and a footer. The design will change at two breakpoints: 768px (for tablets) and 480px (for mobile phones).
+
+Try running the code below:
+
+html
+
+  Copy
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adaptive Design Example</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            header,
+            .content,
+            footer {
+                padding: 20px;
+                text-align: center;
+            }
+
+            /* Default style for desktop */
+            header {
+                background-color: skyblue;
+            }
+
+            .content {
+                background-color: lightgray;
+            }
+
+            footer {
+                background-color: lightcoral;
+            }
+
+            /* Style for tablet devices */
+            @media (max-width: 768px) {
+                header {
+                    background-color: lightgreen;
+                }
+
+                .content {
+                    background-color: lightyellow;
+                }
+
+                footer {
+                    background-color: lightblue;
+                }
+            }
+
+            /* Style for mobile devices */
+            @media (max-width: 480px) {
+                header,
+                footer {
+                    padding: 10px;
+                    font-size: 14px;
+                }
+
+                .content {
+                    background-color: lightpink;
+                }
+
+                .content p {
+                    font-size: 12px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>My Website Header</header>
+        <div class="content">
+            <p>Welcome to my website. This is the content area.</p>
+        </div>
+        <footer>Website Footer</footer>
+    </body>
+</html>
+As you read the code above, notice that:
+
+The default style is set for desktop view with different background colors for the header, content, and footer.
+The first media query (@media (max-width: 768px)) targets tablet devices. It changes the background colors for different sections when the screen width is less than or equal to 768 pixels.
+The second media query (@media (max-width: 480px)) targets mobile devices. It adjusts padding and font size for smaller screens and changes the background color of the content area when the screen width is less than or equal to 480 pixels.
+Header and footer
+You noticed we used two 'new' tags <header> and <footer> in our example code above. These two elements serve much the same purpose as the header and footer in a word processing application you may have used to write a school paper. The header appears at the top of the page and the footer at the bottom of the page. The information in a header is introductory and on a web page may include navigation links. The footer on a web page may contain contact information, copyright information, and terms of use statements or links.
+
+Both the <header> and the <footer> are block elements by default.

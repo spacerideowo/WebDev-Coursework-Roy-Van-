@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Coder - Roy's Dream</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #00b894;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    #codeBox, #randomBox {
+      background-color: #1e272e;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      font-family: 'Courier New', Courier, monospace;
+      white-space: pre-wrap;
+      text-align: left;
+      max-width: 700px;
+      display: none;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, I’m Roy</h1>
+  <p>Welcome to my personal goal page. I dream of becoming a professional coder in the field of computer science. Click below to see what I can do!</p>
+  <button onclick="showCode()">Show Me The Code ✨</button>
+  <button onclick="generateIdea()">Generate a Cool Project Idea 💡</button>
+
+  <div id="codeBox">
+    <code>
+      function greet(name) {
+        return `Hello, ${name}! Welcome to my coding world.`;
+      }
+
+      console.log(greet('Visitor'));
+    </code>
+  </div>
+
+  <div id="randomBox"></div>
+
+  <script>
+    function showCode() {
+      const box = document.getElementById('codeBox');
+      box.style.display = (box.style.display === 'none' || box.style.display === '') ? 'block' : 'none';
+    }
+
+    function generateIdea() {
+      const ideas = [
+        "Build a weather app using a public API",
+        "Create a chatbot that replies with memes",
+        "Develop a mini game using JavaScript",
+        "Design a to-do list with drag-and-drop",
+        "Make a digital clock that changes background with time",
+        "Program a virtual pet that learns new tricks"
+      ];
+      const idea = ideas[Math.floor(Math.random() * ideas.length)];
+      const box = document.getElementById('randomBox');
+      box.style.display = 'block';
+      box.innerText = `🚀 Project Idea: ${idea}`;
+    }
+  </script>
+</body>
+</html>
