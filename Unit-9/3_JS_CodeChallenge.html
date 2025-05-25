@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meet Shannon - Future Tech Innovator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .intro, .project {
+            flex: 1;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .intro {
+            background-color: #e0f7fa;
+        }
+
+        .project {
+            background-color: #f3e5f5;
+        }
+
+        .highlight {
+            color: purple;
+            font-weight: bold;
+        }
+
+        img {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meet Shannon</h1>
+
+    <div class="container">
+        <div class="intro">
+            <p><strong>Hi, my name is Shannon.</strong> I live in <em>California</em>, the Bay Area to be exact.</p>
+            <p>If I had to choose a person to meet, I'd choose <mark>Ursula Burns</mark>. She was the first Black woman to become the CEO of a Fortune 500 company — <b>Xerox</b>! Isn’t that inspiring?</p>
+            <p>I <i>love</i> all things tech. I plan to take every <u>computer science</u> course offered at school!</p>
+            <p>Tech is amazing because it lets us <strong>create</strong>. My dream is to build something that <em>changes the world</em>.</p>
+        </div>
+
+        <div class="project">
+            <h2>Current Project</h2>
+            <p>Right now, I'm working with my best friends on a website that's a mix of <ins>Instagram</ins> and <ins>Spotify</ins>. Pretty cool, right?</p>
+            <p>It's still a work in progress, but if we finish it, I think a lot of people will use it!</p>
+            <p><small>Fun Fact: My favorite color is <span class="highlight">purple</span></small></p>
+        </div>
+    </div>
+
+    <hr/>
+
+    <img src="https://vscodeedu.com/content/ZeI6oox3qny3AC4RCE1b25pKR5K4cCsEdgK9TKyvGmI.png" alt="Computer Chip" width="300" height="300"/>
+
+    <hr/>
+
+    <!-- Simple Button -->
+    <button onclick="sayHello()">Click me!</button>
+
+    <!-- Basic JavaScript -->
+    <script>
+        alert("Welcome to Shannon's website!");
+
+        function sayHello() {
+            alert("Hello!");
+        }
+    </script>
+
+</body>
+</html>
