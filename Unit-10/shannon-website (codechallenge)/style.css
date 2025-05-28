@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.intro, .project {
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.intro {
+    background-color: #e0f7fa;
+}
+
+.project {
+    background-color: #f3e5f5;
+}
+
+.highlight {
+    color: purple;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meet Shannon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f7f9fc;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+        }
+
+        section {
+            display: none;
+            padding: 30px;
+        }
+
+        section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="active">
+    <h1>Welcome to Shannon's Website</h1>
+    <p>This is the homepage. Learn more about Shannon by clicking the navigation above.</p>
+</section>
+
+<section id="about">
+    <h1>About Shannon</h1>
+    <p>Shannon is a future tech innovator passionate about web design, programming, and all things technology!</p>
+</section>
+
+<section id="contact">
+    <h1>Contact Shannon</h1>
+    <p>Email: futuretech@shannon.com<br>Instagram: @shannon.codes</p>
+</section>
+
+<script>
+    function showSection(id) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(sec => sec.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
